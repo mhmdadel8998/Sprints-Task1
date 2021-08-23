@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Edit My Profile
+    </title>
+</head>
+<body>
+    <form method="GET" action="index.html">
+         <!-- Account Form -->
+        <fieldset>
+            <legend>
+                Account
+            </legend>
+            <label>Profile Picture</label>
+            <br>
+            <input id="img" type="file" value="Upload" name="profilePicture">
+            <br><br>
+            <label>Username</label>
+            <br>
+            <input id="usrname" type="text" minlength="4" name="username" maxlength="8" required>
+            <br>
+            <label>Password</label>
+            <br>
+            <input id="pass" type="password" minlength="6" name="password" required>
+        </fieldset>
+         <!-- Contacts Form -->
+        <fieldset>
+            <legend>
+                Contacts
+            </legend>
+            <label>Facebook</label>
+            <input type="url" id="fblink" name="facebook">
+            <br><br>
+            <label>email</label>
+            <input id="email" type="email" required name="email">
+            <br><br>
+            <label>Mobile Phone</label>
+            <input id="phone" type="number" minlength="11" maxlength="11" name="phoneNumber" required>
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
+    <br>
+    <a href="edit.html"><button>Reset</button></a>
+</body>
+
+</html>
